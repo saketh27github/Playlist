@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Keeper</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+     <!-- Navigate to Favorites page -->
+     <a href="fav.html" class="favorites-link">Go to Favorites</a>
+    
+    
+    <div class="">
+        <!-- Search bar -->
+        <input type="text" id="searchInput" placeholder="Search by description..." onkeyup="searchVideos()">
+        
+        <!-- Video adding form -->
+        <div class="video-form">
+            <input type="text" id="urlInput" placeholder="Paste YouTube video URL here...">
+            <input type="text" id="descriptionInput" placeholder="Description...">
+            <button onclick="addVideo()">Save</button>
+        </div>
+
+        <!-- Videos display area -->
+        <div id="videos"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
